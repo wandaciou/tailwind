@@ -15,12 +15,13 @@
     content:'';
     @apply w-1/4 h-full absolute top-0 inset-x-3/4 border border-gray-200 border-t-0 border-b-0
   }
+
 }
 
-@screen md{
+@media (max-width: 767px){
   .navicon {
     width: 1.125em;
-    height: .125em;
+    height: 0.125em;
   }
 
   .navicon::before,
@@ -31,7 +32,7 @@
     height: 100%;
     transition: all .2s ease-out;
     content: '';
-    background: #3D4852;
+    background-color: #111111;
   }
 
   .navicon::before{
@@ -65,5 +66,8 @@
   .menu-btn:checked ~ .menu-icon .navicon::before,
   .menu-btn:checked ~ .menu-icon .navicon::after{
     top: 0;
+  }
+  .menu {
+    @apply absolute top-14 left-0 w-full bg-white z-10 h-screen py-2
   }
 }

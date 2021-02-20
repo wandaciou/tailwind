@@ -8,18 +8,20 @@
   </head>
   <body>
     <div class="wrap">
-      <nav class="flex flex-row p-4">
+      <nav class="flex flex-row p-4 items-center relative justify-between ">
         <h1 class="text-xl px-2">LOGO</h1>
-        <ul class="flex flex-row px-4">
-          <li class="px-2">link</li>
-          <li class="px-2">link</li>
-          <li class="px-2">link</li>
-        </ul>
+
         <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none z-10" for="menu-btn">
           <span class="navicon bg-grey-darkest flex items-center relative"></span>
         </label>
-      </nav>
+        <ul class="menu flex-col flex sm:flex-row px-4 z-10">
+          <li><a href="#" class="px-2 py-3 md:p-2 block">link</a></li>
+          <li><a href="#" class="px-2 py-3 md:p-2 block">link</a></li>
+          <li><a href="#" class="px-2 py-3 md:p-2 block">link</a></li>
+        </ul>
+
+    </nav>
 
     </div>
 
