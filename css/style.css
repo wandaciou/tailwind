@@ -5,19 +5,22 @@
 
 @layer components {
   .wrap {
-    @apply w-full
+    @apply w-full z-20
   }
   .wrap::before {
     content:'';
-    @apply w-1/4 h-full absolute top-0 inset-x-1/4 border border-gray-200 border-t-0 border-b-0
+    @apply w-1/4 h-full absolute top-0 inset-x-1/4 border border-gray-200 border-t-0 border-b-0 -z-10
   }
   .wrap::after {
     content:'';
-    @apply w-1/4 h-full absolute top-0 inset-x-3/4 border border-gray-200 border-t-0 border-b-0
+    @apply w-1/4 h-full absolute top-0 inset-x-3/4 border border-gray-200 border-t-0 border-b-0 -z-10
   }
 
 }
-
+.logo{
+  background-image: url(/img/logo.svg);
+  @apply h-8 bg-contain
+}
 @media (max-width: 767px){
   .navicon {
     width: 1.125em;
